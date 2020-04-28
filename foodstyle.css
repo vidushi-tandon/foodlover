@@ -10,7 +10,7 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: 175px 500px 1fr;
+    grid-template-columns: 300px 1000px 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
         "logo banner banner"
@@ -27,10 +27,9 @@ body {
 /* -000- Area styling -000- */
 
  .box {
-        border: solid 1px #000;
         padding: 20px;
         background-color: #ddd; 
-
+        border-radius: 10px;
 
 } 
 
@@ -47,7 +46,10 @@ body {
 
 .logo {
     grid-area: logo; 
-   
+    padding:0;
+    width:320;
+    height:199px;
+    background-image: url(images/logo2_v2.png)
 }
 
  .banner {
@@ -60,9 +62,7 @@ body {
     text-align: center;
 }
     
-.food{
-    
-}
+
 .main {
      grid-area: main;
    background-color: #FFFDD6; 
@@ -76,7 +76,7 @@ body {
  
 .footer {
     grid-area: footer;
-   
+     text-align: center; 
 } 
 
 /* -000- End of Area styling -000- */
@@ -96,18 +96,21 @@ h1, h2, h3, h4 {
   padding: 16px;
   font-size: 16px;
   border: none;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
 }
 
 .dropdown {
   position: relative;
   display: inline-block;
+
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
   background-color: #f1f1f1;
-  min-width: 160px;
+  min-width: 200px;
 
 }
 
@@ -125,8 +128,23 @@ h1, h2, h3, h4 {
 .dropdown:hover .dropbtn {background-color: #BAEEFF;}
 
 .nav a {font-weight: bold;}
-.nav a:link, {color: darkblue;} a:visited {color: #000;}
+.nav a:link {color: #000;} a:visited {color: #000;}
 .nav a:hover {color: darkblue; text-decoration: none;}
 
+/* links in side bar */
 
 
+.side a:hover{color: red;}
+.side a:link {color:#0369FF;} a:visited {color:#0369FF;}
+
+
+
+ /*.masterchef {
+ padding: 10px;
+    margin: 5px;
+    width: 150px;
+    border-radius: 5px;
+    text-align: left;
+    background-color: #BAE88B;
+    font-size: 50;
+} */
