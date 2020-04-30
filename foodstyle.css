@@ -66,12 +66,12 @@ body {
 .main {
      grid-area: main;
    background-color: #FFFDD6; 
-    
+    text-decoration: none;
 }
 
 .side {
     grid-area: side;
-    background-color: #fff; 
+    background-color: #FFF; 
 } 
 
  
@@ -140,7 +140,7 @@ h1, h2, h3, h4 {
 
 
 
- /*.masterchef {
+  /*.masterchef {
  padding: 10px;
     margin: 5px;
     width: 150px;
@@ -154,3 +154,7 @@ h1, h2, h3, h4 {
     color: #000000; /* black */
     font-weight: bold;
     }
+/* Contact page */
+.contact {
+    width: 100%;
+}
