@@ -46,14 +46,16 @@ body {
 
 .logo {
     grid-area: logo; 
-    padding:0;
+    padding:10px;
     width:320;
-    height:199px;
-    background-image: url(images/logo2_v2.png)
+    height:159px;
+    background-image: url(images/logo_final.png)
+  
 }
 
  .banner {
     grid-area: banner; 
+    height: auto;
 }
 
 .nav {
@@ -158,3 +160,16 @@ h1, h2, h3, h4 {
 .contact {
     width: 100%;
 }
+.img-circle { 
+    border-radius: 55%;
+    max-width: 55%;
+    height: auto;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.8);
+}
+
+.center_image {
+    
+    text-align: center;
+}
+
+/*Arrow */
