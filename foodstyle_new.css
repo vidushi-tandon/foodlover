@@ -1,0 +1,260 @@
+body {
+    margin: auto;
+    color: black;
+    padding: 20px;
+  font-family: 'Calibri', sans-serif; 
+
+}
+
+/* ---- Set up site grid ---- */
+
+.container {
+    display: grid;
+      grid-template-columns: 1fr 4fr 2fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "logo1 banner logo2"
+        "nav nav nav"
+        "main main side"
+        "footer footer footer";
+     grid-gap: 4px;
+}
+
+
+
+
+/* ---- End of grid setup ---- */
+/* -000- Area styling -000- */
+
+ .box {
+        padding: 20px;
+        background-color: #ffcc66; /* yellow-orange */ 
+        border-radius: 10px;
+
+} 
+
+/* Area colouring... */
+
+/* logo, banner, navigation and footer are the same */ 
+.nav, .footer{
+        background-color: #ffcc66; /* yellow-orange */ 
+} 
+
+
+
+/* Area specifics */ 
+
+.logo1 {
+    grid-area: logo1; 
+    height: 200px;
+    background-color: white;
+
+}
+
+
+ .logo2 {
+    grid-area: logo2; 
+    height: 200px;     
+    background-color: white;
+
+}
+
+
+
+ .banner {
+    grid-area: banner; 
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    height: 200px;
+    background-color: white; 
+
+}
+
+.nav {
+   grid-area: nav;  
+   font-size: 30px;
+   text-align: center;
+}
+    
+
+.main {
+     grid-area: main;
+    background-color: white; 
+
+}
+
+.side {
+    grid-area: side;
+    background-color: #FFF; 
+} 
+
+ 
+.footer {
+    grid-area: footer;
+    text-align: center; 
+font-size: 20px;
+   
+}
+/* -000- End of Area styling -000- */
+
+/* Font Headings */ 
+h2, h3, h4 {
+    font-family: 'Calibri', sans-serif;
+    font-size: 35px;
+}
+h1 {
+        font-family: 'Calibri', sans-serif;
+    font-size: 80px;
+}
+    p {
+    font-size: 20px;
+    font-family: 'Calibri', sans-serif;
+}
+        
+    .side {
+        font-size: 20px;
+        }
+
+
+/* -000- End of Headings -000- */
+
+/* Logo Adjustments */
+
+
+
+/* -000- Navigation Links and Dropdown Menu -000- */
+
+.dropbtn {
+  background-color: #ffcc66;
+  padding: 16px;
+  font-size: 30px;
+  border: none;
+  font-weight: bold;
+ font-family: 'Calibri', sans-serif; 
+  text-decoration: underline;
+
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 250px;
+  font-size: 25px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.dropdown-content a:hover {background-color: #ffcc66;}
+
+.dropdown:hover .dropdown-content {display: block;} 
+
+.dropdown:hover .dropbtn {background-color:  #ffcc66;}
+
+.nav a {font-weight: bold;}
+.nav a:link {color: #000;} a:visited {color: #000;}
+.nav a:hover {color: black; text-decoration: none;}
+.nav a:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none; 
+}
+    /* Main and Side Links */
+.main a:link {color:#000;}
+.main a:hover{color: firebrick; font-weight: bold; text-decoration: none;}
+ 
+
+
+/* links in side bar */
+
+
+
+.sub_heading {
+    font-family: 'Calibri', sans-serif;     
+    font-weight: bold;
+    }
+.sub_heading_rating {
+    color: #B64E07; 
+    font-weight: bold;
+    }
+
+/* Contact page */
+.contact {
+    width: 100%;
+}
+.img-circle { 
+    border-radius: 55%;
+    max-width: 29%;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.8);
+}
+
+.center_image {
+    
+    text-align: center;
+}
+/* Arrow */
+.arrow  {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 7px;
+    
+}
+
+
+.down {
+    transform: rotate(45deg);
+
+}
+
+
+.arrow:hover {
+    border-color: white;  
+} 
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.center-cookies {
+   margin-left: 300px;
+}
+
+
+
+
+ .dropbtn:hover{
+    color: white;
+    text-decoration: none;
+}
+
+  a.onhoverwhite:hover {
+    color: white;
+    text-decoration: none;
+} 
+ 
+
+
+.side a:link {color:#000;}
+
+.side a:hover {
+    color: firebrick;
+    text-decoration: none;
+    font-weight: bold;
+} 
